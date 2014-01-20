@@ -24,8 +24,7 @@ class Fib
 
   def even_fibs
     fib_array = fibonacci
-    fib_array.delete_if { |n| n.odd? }
-    fib_array.inject(:+)
+    fib_array.delete_if { |n| n.odd? }.inject(:+)
   end
 
 end
